@@ -1,0 +1,140 @@
+    /*
+    //‰„«Ì‘ ⁄ò”
+    glcd_putimage(50,30,buffer,GLCD_PUTCOPY);
+    delay_ms(100);glcd_clear();      
+    
+    //—Ê‘‰ Ê Œ«„Ê‘ ò—œ‰ ’›ÕÂ
+    glcd_display(0);delay_ms(300);glcd_display(1);
+    
+    //‰„«Ì‘ ⁄ò”-«·» Â —‰ê Â« ﬁ—Ì‰Â „Ì‘Ê‰œ-”›Ìœ ”Ì«Â „Ì‘Â Ê ”Ì«Â ”›Ìœ „Ì‘Â
+    glcd_putimage(50,30,buffer,GLCD_PUTNOT);
+    
+    
+    delay_ms(100);glcd_clear(); //Å«ò ò—œ‰ ò· ’›ÕÂ+ «ŒÌ— “„«‰Ì
+
+    ///////////////////////////////////////////////////////—”„ «‰Ê«⁄ œ«Ì—Â
+    glcd_circle(20,20,20);//—”„ ÌÂ œ«Ì—Â
+    glcd_fillcircle(60,60,30);//—”„ ÌÂ œ«Ì—Ê  Ê Å—
+    glcd_arc(160,60,0,270,50);// —”„ ÌÂ ò„«‰     
+    ///////////////////////////////////////////////////////—”„ «‰Ê«⁄ œ«Ì—Â      
+    
+    delay_ms(100);glcd_clear();
+    
+    //////////////////////////////////////////////////////////—”„ «‰Ê«⁄ „” ÿÌ·
+    glcd_rectangle(0,0,20,20); //—”„ ÌÂ „” ÿÌ·
+    glcd_rectrel(40,0,20,20);   //—”„ ÌÂ „” ÿÌ·
+    glcd_rectround(60,60,50,50,7);//—”„ ÌÂ „” ÿÌ· »« êÊ‘Â Â«Ì ê—œ ‘œÂ
+    glcd_bar(180,50,239,127);        //—”„ ÌÂ „” ÿÌ·  Ê Å—
+    glcd_barrel(25,0,10,10);    //—”„ ÌÂ „” ÿÌ·  Ê Å—    
+    //////////////////////////////////////////////////////////—”„ «‰Ê«⁄ „” ÿÌ·
+    
+    delay_ms(100);glcd_clear();
+    
+    ///////////////////////////////ê“«‘ ‰ ‰ﬁÿÂ-Å«ò ò—œ‰‘ Ê...
+    glcd_setpixel(1,1);// —”„ ÌÂ ‰ﬁÿÂ 
+    glcd_putpixel(2,2,1);//ê“«‘ ‰ ÌÂ ‰ﬁÿÂ ”Ì«Â   
+    //glcd_getpixel(2,2);//›Â„Ìœ‰ —‰ê ÌÂ ‰ﬁÿÂ   
+    glcd_putpixel(3,3,glcd_getpixel(2,2)); 
+    delay_ms(100);
+    glcd_clrpixel(1,1);//Å«ò ò—œ‰ ÌÂ ‰ﬁÿÂ 
+    glcd_putpixel(2,2,0);//ê“«‘ ‰ ÌÂ ‰ﬁÿÂ ”›Ìœ 
+    ///////////////////////////////ê“«‘ ‰ ‰ﬁÿÂ-Å«ò ò—œ‰‘ Ê...
+    
+    delay_ms(100);glcd_clear();
+    
+
+    ///////////////‰„«Ì‘ ò«—«ò — Ê —‘ Â-òÂ Â— òœÊ„ Ìò «“ œÊ  «»⁄ —Ê »Â œÊ ’Ê—  „„ò‰ ‰Ê‘ „
+    glcd_putcharxy(20,20,'A');
+    glcd_putcharxy(20,30,X);
+    glcd_outtextxy(20,40,"DMF313.IR");
+    glcd_outtextxy(20,50,XX);   
+    ///////////////‰„«Ì‘ ò«—«ò — Ê —‘ Â-òÂ Â— òœÊ„ Ìò «“ œÊ  «»⁄ —Ê »Â œÊ ’Ê—  „„ò‰ ‰Ê‘ „
+    
+    delay_ms(100);glcd_clear();
+    
+    /////////////////////—”„ ÌÂ Œÿ
+    glcd_line(20,80,150,20);
+    /////////////////////—”„ ÌÂ Œÿ 
+    
+    delay_ms(100);glcd_clear();
+    
+    //////////////////////////////////////////// ⁄ÌÌ‰ ›«’·Â »Ì‰ Õ—Ê› «‰ê·Ì”Ì
+    glcd_settextjustify(10,1);
+    glcd_outtextxy(20,40,"DMF313.IR");
+
+    glcd_settextjustify(5,1);
+    glcd_outtextxy(20,50,"DMF313.IR");  
+
+    glcd_settextjustify(1,1);
+    glcd_outtextxy(20,60,"DMF313.IR");  
+    //////////////////////////////////////////// ⁄ÌÌ‰ ›«’·Â »Ì‰ Õ—Ê› «‰ê·Ì”Ì      
+    
+    delay_ms(100);glcd_clear(); 
+    
+    ///////////////////////////«» œ« „ ‰ »Â ’Ê—  „⁄„Ê·Ì ‰Ê‘ Â „Ì‘Êœ Ê »⁄œ —‰ê Â« ﬁ—Ì‰Â ‘œÂ Ê œÊ»«—Â ‰Ê‘ Â „Ì‘Êœ
+    glcd_outtextxy(0,20,"HI MY WEB SITE IS WWW.DMF313.IR\nAND I AM MAHDE DAMARCHILU\no_O >>> ^_^");
+    glcd_setcolor(0); glcd_setbkcolor(1);//ﬁ—Ì‰Â ò—œ‰ —‰ê Â«
+    glcd_outtextxy(0,70,"HI MY WEB SITE IS WWW.DMF313.IR\nAND I AM MAHDE DAMARCHILU\no_O >>> ^_^");
+    glcd_setcolor(1); glcd_setbkcolor(0);//ﬁ—Ì‰Â ò—œ‰ —‰ê Â«
+    ///////////////////////////«» œ« „ ‰ »Â ’Ê—  „⁄„Ê·Ì ‰Ê‘ Â „Ì‘Êœ Ê »⁄œ —‰ê Â« ﬁ—Ì‰Â ‘œÂ Ê œÊ»«—Â ‰Ê‘ Â „Ì‘Êœ  
+    
+    delay_ms(100);glcd_clear();
+    
+    ////////////////////////////////////—”„ ‘ò· œ·ŒÊ«Â »Â Ê”Ì·Â  ⁄—Ì› ‰ﬁ«ÿ‘
+    glcd_drawpoly(7,hexagon);
+    //////////////////////////////////////////////////////////////////////  
+    
+    delay_ms(100);glcd_clear(); 
+     
+    //////////////////////////////////////////////////////////—”„ Œÿ+ €ÌÌ— ‘ò· Ê ò·› Ì Œÿ
+    glcd_setlinestyle(1,GLCD_LINE_DOT_SMALL);
+    glcd_line(0,15,239,15);
+
+    glcd_setlinestyle(1,GLCD_LINE_DOT_LARGE);
+    glcd_line(0,20,239,20);
+
+    /* Line thickness: 2 pixels */
+    glcd_setlinestyle(2,GLCD_LINE_SOLID);
+    glcd_line(0,25,239,25);
+
+    glcd_setlinestyle(2,GLCD_LINE_DOT_SMALL);
+    glcd_line(0,30,239,30);
+
+    glcd_setlinestyle(2,GLCD_LINE_DOT_LARGE);
+    glcd_line(0,35,239,35);
+
+    /* Line thickness: 4 pixels */
+    glcd_setlinestyle(4,GLCD_LINE_SOLID);
+    glcd_line(0,40,239,40);
+
+    glcd_setlinestyle(4,GLCD_LINE_DOT_SMALL);
+    glcd_line(0,45,239,45);
+
+    glcd_setlinestyle(4,GLCD_LINE_DOT_LARGE);
+    glcd_line(0,50,239,50);
+    //////////////////////////////////////////////////////////—”„ Œÿ+ €ÌÌ— ‘ò· Ê ò·› Ì Œÿ
+       
+    delay_ms(100);glcd_clear();
+    
+    //////////////////////////////////////////////////// ”  «‰Ê«⁄ ›Ê‰ 
+    glcd_setfont(font5x7);
+    glcd_outtextxy(0,0,"DMF313.IR");
+    
+    glcd_setfont(courier7x14);
+    glcd_outtextxy(0,20,"DMF313.IR");
+    
+    glcd_setfont(courier_bold14);
+    glcd_outtextxy(0,40,"DMF313.IR");
+    
+    glcd_setfont(arial14);
+    glcd_outtextxy(0,60,"DMF313.IR");
+    
+    glcd_setfont(arial_bold14);
+    glcd_outtextxy(0,80,"DMF313.IR");
+    
+    glcd_setfont(script19);
+    glcd_outtextxy(0,100,"DMF313.IR");
+    //////////////////////////////////////////////////// ”  «‰Ê«⁄ ›Ê‰    
+    
+    delay_ms(100);glcd_clear();   
+    */

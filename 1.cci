@@ -1,0 +1,9 @@
+VERSION:3 SOURCE_TIMESTAMP:539B5731
+NODE:I LEVEL:0 LINE:1 "E:\cvavr\inc\mega32.h"
+NODE:I LEVEL:0 LINE:2 "C:\Users\tech\Desktop\T6963C\c\graphics\glcd.h"
+NODE:I LEVEL:0 LINE:3 "C:\Users\tech\Desktop\T6963C\c\font\font5x7.c"
+NODE:I LEVEL:0 LINE:4 "E:\cvavr\inc\stdlib.h"
+NODE:I LEVEL:0 LINE:5 "E:\cvavr\inc\delay.h"
+NODE:M LEVEL:0 LINE:6 "ADC_VREF_TYPE"
+NODE:F LEVEL:0 LINE:10 "temp(unsigned char adc_input)"
+NODE:F LEVEL:0 LINE:21 "main(void)"
